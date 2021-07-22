@@ -1,0 +1,59 @@
+-- Hanover Style Guide --
+
+Using Bootstrap 3 for basic CSS management
+
+-- Colors --
+Undecided, likely white, navy, maroon?
+
+-- Text --
+Classes:
+	<a>
+	text-dark						<- basic black link
+	
+	<div>
+	min-vh-100 						<- height for footer
+	text-left/right/center			<- alignment
+	w-75							<- 75% width
+	mx-auto							<- centered
+
+
+
+-- Going Forward --
+Index:
+	Mission statement and guidelines
+
+		- Needs photo banner across top with HFD across
+		- Map of district formatted (h&v centered and sized with responsiveness)
+		- Sitewide but first instance, crew headshot for captain
+
+Call Volume Page:
+	Calls for Service folder
+		Yearly, Quarterly, Monthly calls
+
+		- Data does not have dates, except by monthly separation
+		- CSV reader?
+		- Will need on screen display of data implying hosted data source
+		- Django on Amazon Lightsail? Alternative is forcing them to update manually (which is jank)
+
+Policies:
+	Open Records folder
+
+		- Outline the stance of the Fire Department briefly and describe the Open Policies Act of CO.
+		- Allow user to read more and attach .pdf
+		- Include contact (complaint) link on page with description in regards to open stance
+		- Include contact (complaint) link on footer
+		- Consider policy for liability of user if they want online submission form for complaints. This would be on this page.
+
+Join:
+	Volunteer Information
+
+		- SOP, provided
+		- By Law, provided
+		- Application, potential for online?
+
+Stations:
+	Station Photos, with trucks
+
+		- Truck names or numbers?
+		- Banner images
+		- How to update if they update

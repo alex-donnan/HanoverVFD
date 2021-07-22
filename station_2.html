@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Hanover Fire Department - Station 1</title>
+        <meta charset="utf-8">
+        <meta name="description" content="The Hanover Fire Department is a volunteer fire department serving El Paso county of Colorado.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   		<!-- Bootstrap CSS -->
+    	<link href="css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body>
+		 <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	    <script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function() {
+
+				//on resize set all image heights to correct aspect ratio
+				$(window).resize(function() {
+					//get engine1 width and set height to 16:9
+					var _width = Math.max(($('#base_container').width() - Math.max($("#text_e1").width(), $('#text_a').width(), $('#text_e2').width(), $('#text_e3').width())) * 0.9, 300);
+					var _height = _width * (9/16);
+					//set heights and widths
+
+					$('#engine1').height(_height);
+					$('#engine1').width(_width);
+					$('#engine2').height(_height);
+					$('#engine2').width(_width);
+					$('#engine3').height(_height);
+					$('#engine3').width(_width);
+					$('#ambulance').height(_height);
+					$('#ambulance').width(_width);					
+					console.log("Resize: " + _width + ", " + _height);
+				});
+			});
+		</script>
+
+		<!-- Navigation for HFD -->
+		<header>
+			<!-- Navigation bar: flexible for mobile (columns) or desktop (row) -->
+			<nav class="navbar d-flex flex-column flex-sm-row justify-content-start border-bottom">
+				<!-- Brand -->
+				<div class="navbar-brand mr-auto p-0">
+					<a  href="./index.html"><img src="./media/hanover_vfd_logo.png" alt="Hanover VFD Logo" class="m-0 p-0 text-dark" style="max-width: 128px; max-height: 128px;"></a>
+					<!--<a href="./index.html" class="display-5 text-dark"><strong>Hanover Fire Department</strong></a>-->
+				</div>
+				<!-- Homepage -->
+				<div class="nav-item">
+					<a class="nav-link active text-dark" style="" href="index.html"><strong>Home</strong></a>
+				</div>
+				<!-- District Board information -->
+				<div class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" style=""><strong>District Board</strong></a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item text-dark" href="#">Minutes</a>
+						<a class="dropdown-item text-dark" href="policies.html">Policies</a>
+						<a class="dropdown-item text-dark" href="#">Board Members</a>
+						<a class="dropdown-item text-dark" href="#">Budget</a>
+						<a class="dropdown-item text-dark" href="#">Call Volume</a>
+					</div>
+				</div>
+				<!-- Crew Members -->
+				<!-- Under Construction
+				<div class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Crew</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item text-dark" href="#">Officers</a>
+						<a class="dropdown-item text-dark" href="#">Crew Members</a>
+					</div>
+				</div>
+				-->
+				<!-- Stations -->
+				<div class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><strong>Stations</strong></a>
+					<div class="dropdown-menu">
+						<!-- Populate with station list -->
+						<a class="dropdown-item text-dark" href="station_1.html">Station 1</a>
+						<a class="dropdown-item text-dark" href="station_2.html">Station 2</a>
+						<a class="dropdown-item text-dark" href="station_3.html">Station 3</a>
+					</div>
+				</div>
+				<!-- Join CtA -->
+				<div class="nav-item">
+					<a class="nav-link text-dark" href="join.html"><strong>Join</strong></a>
+				</div>
+			</nav>
+		</header>
+		<!-- Body for HFD -->
+		<main class="bg-light p-0 min-vh-100">
+			<div id="banner_image" class="w-100 m-0" style="background-image: linear-gradient(#00000088, #00000088), url('./media/stations/station_2/Station 2.jpg'); background-position:center; background-repeat:no-repeat; background-size:cover; height:300px; padding:75px;">
+				<div class="text-center m-0 p-0">
+					<p class="display-3" style="color:#fefefeff"><strong>Station 2</strong></p>
+					<p class="h4" style="color:#fefefeff">13325 Old Pueblo Rd Fountain, CO 80817</p>
+				</div>
+			</div>
+			<div class="bg-white border m-3 mx-auto rounded p-0 text-center w-75">
+				<div class="container p-5">
+					<!-- Engine 1 -->
+					<h5>Engine 3512</h5>
+					<hr>
+					<div class="container d-flex flex-wrap justify-content-center p-2" id="base_container">
+					    <img src="./media/stations/station_2/Station 2 Trucks/Engine_3512.jpg" class="mx-auto my-auto rounded" style="min-width: 300px; max-width: 50%;" id="engine1" alt="Firetruck 3512">
+					    <div class="mx-auto my-1" id="text_e1" style="min-width: 50%; max-width: 80%;">
+							<ul class="list-group-flush text-left">
+								<li class="list-group-item">Year: 1999</li>
+								<li class="list-group-item">Manufacturer: Spartan</li>
+								<li class="list-group-item">Pump: 1250 Gallons per Minute</li>
+								<li class="list-group-item">Water Capacity: 750 Gallons</li>
+								<li class="list-group-item">Personnel: 6</li>
+								<li class="list-group-item">4 Bottle CASCADE and fill system</li>
+							</ul>
+						</div>
+					</div>
+				    <br>
+				    <!-- State Brush -->
+					<br>
+					<h5>State Brush 3544 (6x6)</h5>
+					<hr>
+					<div class="container d-flex flex-wrap justify-content-center">
+				    	<img src="./media/stations/station_2/Station 2 Trucks/State Brush 3544.jpeg" class="mx-auto my-auto rounded" style="min-width: 300px; max-width: 50%;" id="ambulance" alt="State Brush 3544">
+						<div class="mx-auto" id="text_a" style="min-width: 50%; max-width: 80%;">
+							<ul class="list-group-flush text-left">
+								<li class="list-group-item">Year: 2004</li>
+								<li class="list-group-item">Manufacturer: Colorado Division of Fire Safety</li>
+								<li class="list-group-item">Pump: 375 Gallons per Minute</li>
+								<li class="list-group-item">Water Capacity: 875 Gallons</li>
+								<li class="list-group-item">Personnel: 3</li>
+							</ul>
+						</div>
+				    </div>
+			    	<br>
+			    	<!-- Engine 2 -->
+					<br>
+					<h5>Brush 3542 (4x4)</h5>
+					<hr>
+			    	<div class="container d-flex flex-wrap justify-content-center">
+				    	<img src="./media/stations/station_2/Station 2 Trucks/Brush 3542.jpg" class="mx-auto my-auto rounded" style="min-width: 300px; max-width: 50%;" id="engine2" alt="Firetruck 'Brush' 3542">
+						<div class="mx-auto" id="text_e2" style="min-width: 50%; max-width: 80%;">
+							<ul class="list-group-flush text-left">
+								<li class="list-group-item">Year: 2008</li>
+								<li class="list-group-item">Manufacturer: Freedom Fire Equipment</li>
+								<li class="list-group-item">Pump: 425 Gallons per Minute</li>
+								<li class="list-group-item">Water Capacity: 500 Gallons</li>
+								<li class="list-group-item">Personnel: 4</li>
+							</ul>
+						</div>
+				    </div>
+			    	<br>
+			    	<!-- Engine 3 -->
+					<br>
+					<h5>Tender 3522</h5>
+					<hr>
+			    	<div class="container d-flex flex-wrap justify-content-center">
+				    	<img src="./media/stations/station_2/Station 2 Trucks/Tender 3522.jpg" class="mx-auto my-auto rounded" style="min-width: 300px; max-width: 50%;" id="engine3" alt="Firetruck 'Tender' 3522">
+						<div class="mx-auto" id="text_e3" style="min-width: 50%; max-width: 80%;">
+							<ul class="list-group-flush text-left">
+								<li class="list-group-item">Year: 2005</li>
+								<li class="list-group-item">Manufacturer: Fouts Brothers</li>
+								<li class="list-group-item">Pump: 500 Gallons per Minute</li>
+								<li class="list-group-item">Water Capacity: 3000 Gallons</li>
+								<li class="list-group-item">Personnel: 2</li>
+							</ul>
+						</div>
+				    </div>
+				    <br>
+				</div>
+			</div>
+			<br>
+		</main>
+		<!-- Contact footer for HFD. Subject for removal -->
+		<footer>
+			<hr class="mt-0 pt-0 w-100">
+			<div class="mx-auto text-center text-dark w-75">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<p class="mb-0"><strong>Hanover District HQ</strong></p>
+							<p class="m-0">18234 Midway Ranch Rd.</p>
+							<p class="mt-0">Fountain, CO 80817</p>
+						</div>
+						<div class="col">
+							<p class="mb-0">Want to Volunteer? <a href="./join.html">Apply Here</a></p>
+							<p class="mt-0">Citizen Complaint? <a href="./policies.html">Find the Form Here</a></p>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+		</footer>
+	</body>
+</html>
