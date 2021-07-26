@@ -16,51 +16,59 @@
 
 		<!-- Navigation for HFD -->
 		<header>
-			<!-- Navigation bar: flexible for mobile (columns) or desktop (row) -->
-			<nav class="navbar d-flex flex-column flex-sm-row justify-content-start border-bottom">
+			<!-- Navigation bar: expanded for any query over medium -->
+			<nav class="navbar navbar-expand-sm justify-content-start border-bottom">
 				<!-- Brand -->
-				<div class="navbar-brand mr-auto p-0">
+				<div class="navbar-brand p-0 d-inline">
 					<a  href="./index.html"><img src="./media/hanover_vfd_logo.png" alt="Hanover VFD Logo" class="m-0 p-0 text-dark" style="max-width: 128px; max-height: 128px;"></a>
 					<!--<a href="./index.html" class="display-5 text-dark"><strong>Hanover Fire Department</strong></a>-->
 				</div>
-				<!-- Homepage -->
-				<div class="nav-item">
-					<a class="nav-link active text-dark" style="" href="index.html"><strong>Home</strong></a>
-				</div>
-				<!-- District Board information -->
-				<div class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" style=""><strong>District Board</strong></a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item text-dark" href="#">Minutes</a>
-						<a class="dropdown-item text-dark" href="policies.html">Policies</a>
-						<a class="dropdown-item text-dark" href="#">Board Members</a>
-						<a class="dropdown-item text-dark" href="#">Budget</a>
-						<a class="dropdown-item text-dark" href="#">Call Volume</a>
-					</div>
-				</div>
-				<!-- Crew Members -->
-				<!-- Under Construction
-				<div class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Crew</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item text-dark" href="#">Officers</a>
-						<a class="dropdown-item text-dark" href="#">Crew Members</a>
-					</div>
-				</div>
-				-->
-				<!-- Stations -->
-				<div class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><strong>Stations</strong></a>
-					<div class="dropdown-menu">
-						<!-- Populate with station list -->
-						<a class="dropdown-item text-dark" href="station_1.html">Station 1</a>
-						<a class="dropdown-item text-dark" href="station_2.html">Station 2</a>
-						<a class="dropdown-item text-dark" href="station_3.html">Station 3</a>
-					</div>
-				</div>
-				<!-- Join CtA -->
-				<div class="nav-item">
-					<a class="nav-link text-dark" href="join.html"><strong>Join</strong></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">TEST</span>
+				</button>
+				<!-- dropdown -->
+				<div class="collapse navbar-collapse" id="navbarContent">
+					<ul class="navbar-nav mr-auto">
+						<!-- Homepage -->
+						<li class="nav-item">
+							<a class="nav-link active text-dark" style="" href="index.html"><strong>Home</strong></a>
+						</li>
+						<!-- District Board information -->
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" style=""><strong>District Board</strong></a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item text-dark" href="#">Minutes</a>
+								<a class="dropdown-item text-dark" href="policies.html">Policies</a>
+								<a class="dropdown-item text-dark" href="#">Board Members</a>
+								<a class="dropdown-item text-dark" href="#">Budget</a>
+								<a class="dropdown-item text-dark" href="#">Call Volume</a>
+							</div>
+						</li>
+						<!-- Crew Members -->
+						<!-- Under Construction
+						<div class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Crew</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item text-dark" href="#">Officers</a>
+								<a class="dropdown-item text-dark" href="#">Crew Members</a>
+							</div>
+						</div>
+						-->
+						<!-- Stations -->
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><strong>Stations</strong></a>
+							<div class="dropdown-menu">
+								<!-- Populate with station list -->
+								<a class="dropdown-item text-dark" href="station_1.html">Station 1</a>
+								<a class="dropdown-item text-dark" href="station_2.html">Station 2</a>
+								<a class="dropdown-item text-dark" href="station_3.html">Station 3</a>
+							</div>
+						</li>
+						<!-- Join CtA -->
+						<li class="nav-item">
+							<a class="nav-link text-dark" href="join.html"><strong>Join</strong></a>
+						</li>
+					</ul>
 				</div>
 			</nav>
 		</header>
